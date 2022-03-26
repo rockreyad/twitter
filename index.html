@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="/input.css" />
     <title>twitter - Clone</title>
   </head>
-  <body>
-    <div class="flex flex-row">
+  <body class="bg-black">
+    <div class="flex flex-row space-x-4 divide-x">
       <!-- SideBar -->
       <div class="p-4 basis-1/5 bg-black text-white shadow-sm rounded-md">
         <div class="grid space-y-8 space-x-4">
@@ -179,7 +179,9 @@ c10.945,0,16.927-9.282,16.927-17.333c0-0.265-0.005-0.53-0.015-0.79C28.696,9.285,
               More
             </div>
           </div>
-          <button class="bg-blue-400 p-4 font-bold text-lg rounded-full">
+          <button
+            class="bg-blue-400 p-4 font-bold text-lg rounded-full hover:bg-blue-500"
+          >
             Tweet
           </button>
         </div>
@@ -522,9 +524,336 @@ c10.945,0,16.927-9.282,16.927-17.333c0-0.265-0.005-0.53-0.015-0.79C28.696,9.285,
       </div>
 
       <!-- Sidebar Right -->
-      <div class="p-4 basis-1/4 bg-blue-500 text-white shadow-sm rounded-md">
+      <div class="p-4 basis-1/4 bg-black text-white shadow-sm rounded-md">
         <div class="relative text-gray-600 focus-within:text-gray-400">
-          <span class="absolute inset-y-0 flex items-center pl-2">Search</span>
+          <span class="absolute inset-y-0 flex items-center pl-2">
+            <button
+              type="submit"
+              class="p-1 foucs:outline-none focus:shadow-outline"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+            </button>
+          </span>
+          <input
+            type="text"
+            placeholder="Search Twitter"
+            class="py-4 rounded-full w-full text-sm text-white pl-10 foucs:outline-none focus:bg-white focus:text-white focus:text-gray-600 bg-boxColor"
+          />
+        </div>
+        <div class="pt-3"></div>
+        <div class="rounded-lg bg-boxColor p-4">
+          <div class="flex justify-between">
+            <span class="text-xl">Trends in Bangladesh</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+              />
+            </svg>
+          </div>
+          <div class="pt-4"></div>
+          <div class="grid space-y-6">
+            <div class="flex justify-between">
+              <div class="grid">
+                <span class="font-thin text-sm">Sports, Trending</span>
+                <span class="font-bold text-sm">Messi</span>
+                <span class="font-thin text-sm">9.898 Tweets</span>
+              </div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div class="flex justify-between">
+              <div class="grid">
+                <span class="font-thin text-sm">Politics, Trending</span>
+                <span class="font-bold text-sm">Putin</span>
+                <span class="font-thin text-sm">10.3K Tweets</span>
+              </div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div class="flex justify-between">
+              <div class="grid">
+                <span class="font-thin text-sm">Celebreties, Trending</span>
+                <span class="font-bold text-sm">#ShahRukhKhan</span>
+                <span class="font-thin text-sm">15K Tweets</span>
+              </div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="flex justify-between">
+              <div class="grid">
+                <span class="font-thin text-sm"
+                  >Royal Challengers Bangalore, Trending</span
+                >
+                <span class="font-bold text-sm">Shivam Dube</span>
+                <span class="font-thin text-sm">2,158 Tweets</span>
+              </div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="flex justify-between">
+              <div class="grid">
+                <span class="font-thin text-sm">Entertainment, Trending</span>
+                <span class="font-bold text-sm">#KGFChapter2Trailler</span>
+                <span class="font-thin text-sm">4,560 Tweets</span>
+              </div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div class="flex">
+              <a href="#" class="text-blue-500">Show More</a>
+            </div>
+          </div>
+        </div>
+        <div class="pt-4"></div>
+        <div class="rounded-lg bg-boxColor p-4">
+          <span class="font-bold text-xl">Who to follow</span>
+          <div class="pt-4 grid space-y-4">
+            <div class="flex justify-between space-x-2">
+              <div class="flex space-x-2">
+                <div>
+                  <img
+                    class="w-12 h-12 rounded-full"
+                    src="https://pbs.twimg.com/profile_images/1446883301793349637/kcf-9Dx0_400x400.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="grid">
+                  <span class="font-semibold">letmespeak.org</span>
+                  <span class="font-semibold text-gray-500"
+                    >@Letmespeak-org</span
+                  >
+                </div>
+              </div>
+
+              <div class="flex items-center justify-center">
+                <button
+                  class="bg-white rounded-full w-20 h-10 text-black hover:bg-blue-500 hover:text-white"
+                >
+                  Follow
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-4 grid space-y-4">
+            <div class="flex justify-between space-x-2">
+              <div class="flex space-x-2">
+                <div>
+                  <img
+                    class="w-12 h-12 rounded-full"
+                    src="https://pbs.twimg.com/profile_images/1318899104836104192/5-HIhCv6_400x400.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="grid">
+                  <div class="flex">
+                    <span class="font-semibold">LaLiga</span>
+                    <svg
+                      class="w-4 text-blue-500 fill-blue-500 mx-2"
+                      version="1.1"
+                      viewBox="0 0 536.541 536.541"
+                    >
+                      <g>
+                        <g>
+                          <path
+                            d="M496.785,152.779c-3.305-25.085-16.549-51.934-38.826-74.205c-22.264-22.265-49.107-35.508-74.186-38.813
+			c-11.348-1.499-26.5-7.766-35.582-14.737C328.111,9.626,299.764,0,268.27,0s-59.841,9.626-79.921,25.024
+			c-9.082,6.965-24.235,13.238-35.582,14.737c-25.08,3.305-51.922,16.549-74.187,38.813c-22.277,22.271-35.521,49.119-38.825,74.205
+			c-1.493,11.347-7.766,26.494-14.731,35.57C9.621,208.422,0,236.776,0,268.27s9.621,59.847,25.024,79.921
+			c6.971,9.082,13.238,24.223,14.731,35.568c3.305,25.086,16.548,51.936,38.825,74.205c22.265,22.266,49.107,35.51,74.187,38.814
+			c11.347,1.498,26.5,7.771,35.582,14.736c20.073,15.398,48.421,25.025,79.921,25.025s59.841-9.627,79.921-25.025
+			c9.082-6.965,24.234-13.238,35.582-14.736c25.078-3.305,51.922-16.549,74.186-38.814c22.277-22.27,35.521-49.119,38.826-74.205
+			c1.492-11.346,7.766-26.492,14.73-35.568c15.404-20.074,25.025-48.422,25.025-79.921c0-31.494-9.621-59.848-25.025-79.921
+			C504.545,179.273,498.277,164.126,496.785,152.779z M439.256,180.43L246.477,373.209l-30.845,30.846
+			c-8.519,8.52-22.326,8.52-30.845,0l-30.845-30.846l-56.665-56.658c-8.519-8.52-8.519-22.326,0-30.846l30.845-30.844
+			c8.519-8.519,22.326-8.519,30.845,0l41.237,41.236L377.561,118.74c8.52-8.519,22.326-8.519,30.846,0l30.844,30.845
+			C447.775,158.104,447.775,171.917,439.256,180.43z"
+                          />
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+
+                  <span class="font-semibold text-gray-500">@laliga</span>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-center">
+                <button
+                  class="bg-white rounded-full w-20 h-10 text-black hover:bg-blue-500 hover:text-white"
+                >
+                  Follow
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="pt-4 grid space-y-4">
+            <div class="flex justify-between space-x-2">
+              <div class="flex space-x-2">
+                <div>
+                  <img
+                    class="w-12 h-12 rounded-full"
+                    src="https://pbs.twimg.com/profile_images/459307494569824256/ViSBGjO3_400x400.png"
+                    alt=""
+                  />
+                </div>
+                <div class="grid">
+                  <span class="font-semibold">UEFA.com</span>
+                  <span class="font-semibold text-gray-500">@UEFAcom</span>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-center">
+                <button
+                  class="bg-white rounded-full w-20 h-10 text-black hover:bg-blue-500 hover:text-white"
+                >
+                  Follow
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flex">
+            <a href="#" class="text-blue-500 mt-3">Show More</a>
+          </div>
+          <div class="flex items-center justify-center">
+            <div
+              class="block rounded-t-lg bg-boxColor w-1/4 p-4 fixed bottom-0 z-10"
+            >
+              <div class="flex justify-between">
+                <span class="font-bold text-xl">Messages</span>
+                <div class="flex space-x-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M5 11l7-7 7 7M5 19l7-7 7 7"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
